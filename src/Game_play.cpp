@@ -16,7 +16,13 @@ void Game_play::draw(sf::RenderWindow& window)
 
     window.draw(BG.getDraw());
     window.draw(Hro.getDraw());
+
+    for (auto& Shots: Hro._shots_array)
+    {
+        window.draw(Shots->getDraw());
+    }
 }
+
 void Game_play::cmd()
 {
     if(_states==STATES_GAME_PLAY::ACTION)
@@ -25,7 +31,6 @@ void Game_play::cmd()
         if(sf::Keyboard::isKeyPressed(sf::Keyboard::P))
         {
             _states=STATES_GAME_PLAY::PAUSE;
-
         }
     }
     else
@@ -42,7 +47,6 @@ void Game_play::update(sf::RenderTarget& window)
     if(_states==STATES_GAME_PLAY::ACTION)
     {
         Hro.update();
-
     }
 
 
@@ -55,24 +59,23 @@ void Game_play::update(sf::RenderTarget& window)
         }
         else
         {
-
             setLavel(false, true);
         }
     }
     else
     {
-        //if(getLavel_II())
-        //{
-            if(Hro.getDraw().getPosition().y>1215)
+        if(getLavel_II())
+        {
+            if(Hro.getDraw().getPosition().y>1210)
             {
-                Hro.floor(Hro.getDraw().getPosition().x,1215);
+                Hro.floor(Hro.getDraw().getPosition().x,1210);
                 setLavel(false, true);
             }
             else
             {
                 setLavel(true, false);
             }
-        //}
+        }
     }
 
 
@@ -88,3 +91,4 @@ void Game_play::setLavel(bool I, bool II)
     lavel_I=I;
     lavel_II=II;
 }
+

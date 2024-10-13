@@ -1112,7 +1112,7 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
-1728072552 source:d:\estudio\utn\programacion ii ejercicios\prog ii cursada 3\el anillo de poder\main.cpp
+1728823962 source:d:\estudio\utn\programacion ii ejercicios\prog ii cursada 3\el anillo de poder\main.cpp
 	<SFML/Graphics.hpp>
 	"Game_play.h"
 
@@ -1525,19 +1525,23 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
-1728082434 source:d:\estudio\utn\programacion ii ejercicios\prog ii cursada 3\el anillo de poder\src\hero_1.cpp
+1728849316 source:d:\estudio\utn\programacion ii ejercicios\prog ii cursada 3\el anillo de poder\src\hero_1.cpp
 	"Hero_1.h"
 
-1728025686 d:\estudio\utn\programacion ii ejercicios\prog ii cursada 3\el anillo de poder\include\hero_1.h
+1728848470 d:\estudio\utn\programacion ii ejercicios\prog ii cursada 3\el anillo de poder\include\hero_1.h
 	<SFML/Graphics.hpp>
+	"Shots.h"
 	<iostream>
+	<vector>
+	<memory>
 
-1728027332 d:\estudio\utn\programacion ii ejercicios\prog ii cursada 3\el anillo de poder\include\game_play.h
+1728823962 d:\estudio\utn\programacion ii ejercicios\prog ii cursada 3\el anillo de poder\include\game_play.h
 	<SFML/Graphics.hpp>
 	"Hero_1.h"
 	"Background.h"
+	"Shots.h"
 
-1728031252 source:d:\estudio\utn\programacion ii ejercicios\prog ii cursada 3\el anillo de poder\src\game_play.cpp
+1728823962 source:d:\estudio\utn\programacion ii ejercicios\prog ii cursada 3\el anillo de poder\src\game_play.cpp
 	"Game_play.h"
 
 1728031558 d:\estudio\utn\programacion ii ejercicios\prog ii cursada 3\el anillo de poder\include\background.h
@@ -1545,4 +1549,15 @@
 
 1728031558 source:d:\estudio\utn\programacion ii ejercicios\prog ii cursada 3\el anillo de poder\src\background.cpp
 	"Background.h"
+
+1728827838 d:\estudio\utn\programacion ii ejercicios\prog ii cursada 3\el anillo de poder\include\shots.h
+	<SFML/Graphics.hpp>
+
+1728544676 source:d:\estudio\utn\programacion ii ejercicios\prog ii cursada 3\el anillo de poder\src\shot_manager.cpp
+	"Shot_manager.h"
+
+1728544676 d:\estudio\utn\programacion ii ejercicios\prog ii cursada 3\el anillo de poder\include\shot_manager.h
+
+1728849054 source:d:\estudio\utn\programacion ii ejercicios\prog ii cursada 3\el anillo de poder\src\shots.cpp
+	"Shots.h"
 

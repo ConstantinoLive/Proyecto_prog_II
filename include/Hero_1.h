@@ -1,8 +1,10 @@
 #ifndef HERO_1_H
 #define HERO_1_H
 #include <SFML/Graphics.hpp>
-
+#include "Shots.h"
 #include <iostream>
+#include <vector>
+#include <memory>
 
 class Hero_1
 {
@@ -18,18 +20,26 @@ public:
         JUMPING,
         WALKING_RIGHT_JUMPING,
         WALKING_LEFT_JUMPING,
-        SHOOTING,
+        SHOOTING_RIGHT,
+        SHOOTING_LEFT,
+        ATTACK_RIGHT,
+        ATTACK_LEFT,
         DEATH,
 
     };
     void update();
+    void updateAnimation();
     void mobility();
     sf::Sprite& getDraw();
     void floor(float x, float y);
     sf::Vector2f getPosition();
     void setPosition(float x, float y);
-
-
+    void initVariables();
+    void initAnimation();
+    Shots* shootig;
+    std::vector<std::unique_ptr<Shots>> _shots_array;
+    bool isDPressed = false;
+    bool yaDisparo = false;
 
 protected:
 
@@ -39,7 +49,16 @@ private:
     STATES _state;
     float _jump_force;
     int _xtexture=0;
-    int _width_texture;
+    float _width_texture;
+
+    sf::Clock _animationTimer;
+    sf::IntRect _current_frame;
+    sf::IntRect _first_frame_of_sheet;      //me sirve para saber las coordenadas donde arranca el frame de cada tipo de disparo
+    int _end_of_frames_sheet;               //me sirve para saber hasta donde va cada sprite en los distintos tipos de disparos
+    int _height_texture;
+
+    sf::Clock _shoot_timer;
+    sf::Time _time_shoot;
 
 };
 

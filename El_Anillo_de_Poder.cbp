@@ -48,10 +48,14 @@
 		<Unit filename="include/Background.h" />
 		<Unit filename="include/Game_play.h" />
 		<Unit filename="include/Hero_1.h" />
+		<Unit filename="include/Shot_manager.h" />
+		<Unit filename="include/Shots.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Background.cpp" />
 		<Unit filename="src/Game_play.cpp" />
 		<Unit filename="src/Hero_1.cpp" />
+		<Unit filename="src/Shot_manager.cpp" />
+		<Unit filename="src/Shots.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

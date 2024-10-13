@@ -19,23 +19,18 @@ int main()
         while (window.pollEvent(event))
         {
             if (event.type == sf::Event::Closed)
+            {
                 window.close();
+            }
+
+
         }
 
         GP.update(window);
 
-      // if(GP.getLavel_I())
-      //  {
-            _view.setCenter(GP.get_camera_position());//.x,415
-     //   }
-     //   else
-      //  {
-            //if(GP.getLavel_II())
-            //{
-       //          _view.setCenter(GP.get_camera_position().x,1140);
-            //}
 
-      //  }
+        _view.setCenter(GP.get_camera_position());//.x,415
+
 
         window.setView(_view);
 

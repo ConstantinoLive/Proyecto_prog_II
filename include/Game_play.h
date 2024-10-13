@@ -3,6 +3,7 @@
 #include <SFML/Graphics.hpp>
 #include "Hero_1.h"
 #include "Background.h"
+#include "Shots.h"
 
 
 class Game_play
@@ -27,6 +28,7 @@ private:
     STATES_GAME_PLAY _states;
     Hero_1 Hro;
     Background BG;
+    Shots* shootig;
 
     bool lavel_I=true;
     bool lavel_II=false;
